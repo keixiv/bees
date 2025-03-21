@@ -1,0 +1,73 @@
+name: Build
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: "hourly-workflow"
+  cancel-in-progress: true
+
+env:
+  GH_TOKEN: ${{ github.token }}
+  skip_build:
+
+jobs:
+  run-windows:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Checkout bees-build repository
+        uses: actions/checkout@v4
+        with:
+          repository: keixiv/bees-build
+          token: ${{ secrets.BEES_BUILD_PAT }}
+          path: "bees-build"
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Check if rebuild is needed
+        id: check
+        run: |
+          $needsRebuild = node bees-build/build.js --check-only
+          echo "Rebuild needed: $needsRebuild"
+          if ($needsRebuild -eq "false") {
+            echo "skip_build=true" >> $env:GITHUB_ENV
+          }
+      - name: Setup .NET
+        if: env.skip_build != 'true'
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 9.0.x
+      - name: Download Dalamud
+        if: env.skip_build != 'true'
+        run: |
+          Invoke-WebRequest -Uri https://goatcorp.github.io/dalamud-distrib/latest.zip -OutFile latest.zip
+          Expand-Archive -Force latest.zip "$env:AppData\XIVLauncher\addon\Hooks\dev"
+      - name: Run build script
+        if: env.skip_build != 'true'
+        run: node bees-build/build.js
+      - name: Commit changes to plugins.json and repo.json
+        if: env.skip_build != 'true'
+        run: |
+          git config user.name "Github Actions"
+          git config user.email "actions@github.com"
+          git add ./plugins.json ./repo.json
+          git commit -m "Update plugins.json and repo.json"
+          git push origin main
+      - name: Clean up old releases and create new release
+        if: env.skip_build != 'true'
+        run: |
+          $oldReleases = gh release list --repo ${{ github.repository }} --json tagName --jq '.[].tagName'
+
+          foreach ($release in $oldReleases) {
+            gh release delete $release --repo ${{ github.repository }} --yes
+          }
+
+          gh release create "v$(date +'%Y.%m.%d.%H%M%S')" (Get-Item .\dist\*) --title "New Release" --notes "Automated release from GitHub Actions"
