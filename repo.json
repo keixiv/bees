@@ -1,5 +1,29 @@
 [
   {
+    "Author": "Taurenkey, Gidedin",
+    "Name": "LazyLoot",
+    "Punchline": "Dungeon Loot but Lazy.",
+    "Description": "Roll command with various arguments need | needonly | greed | pass | passall. \nChat and Toast output and delay for rolling.",
+    "Tags": [
+      "plugin",
+      "loot",
+      "utility",
+      "other"
+    ],
+    "InternalName": "LazyLoot",
+    "RepoUrl": "https://github.com/PunishXIV/LazyLoot",
+    "DownloadCount": 126123,
+    "LastUpdate": 1732708225536,
+    "DownloadLinkInstall": "https://github.com/keixiv/bees/releases/latest/download/LazyLoot.zip",
+    "DownloadLinkUpdate": "https://github.com/keixiv/bees/releases/latest/download/LazyLoot.zip",
+    "AssemblyVersion": "5.3.1.1",
+    "ApplicableVersion": "any",
+    "DalamudApiLevel": "11",
+    "Changelog": "- Switch priority on ilvl related rolling rules.",
+    "TestingDalamudApiLevel": "9",
+    "IconUrl": "https://s3.puni.sh/media/plugin/9/icon-zjun2qgmfbe.png"
+  },
+  {
     "Author": "NightmareXIV",
     "Name": "AntiAfkKick",
     "Punchline": "A Dalamud plugin for preventing being auto-kicked from FFXIV due to inactivity. Install and forget, no config needed.",
@@ -29,7 +53,7 @@
     ],
     "InternalName": "Artisan",
     "RepoUrl": "https://github.com/PunishXIV/Artisan",
-    "DownloadCount": 2047898,
+    "DownloadCount": 2048134,
     "LastUpdate": 1733126950007,
     "DownloadLinkInstall": "https://github.com/keixiv/bees/releases/latest/download/Artisan.zip",
     "DownloadLinkUpdate": "https://github.com/keixiv/bees/releases/latest/download/Artisan.zip",
@@ -51,7 +75,7 @@
     ],
     "InternalName": "AutoHook",
     "RepoUrl": "https://github.com/PunishXIV/AutoHook",
-    "DownloadCount": 487747,
+    "DownloadCount": 487974,
     "LastUpdate": 1739211665440,
     "DownloadLinkInstall": "https://github.com/keixiv/bees/releases/latest/download/AutoHook.zip",
     "DownloadLinkUpdate": "https://github.com/keixiv/bees/releases/latest/download/AutoHook.zip",
@@ -70,7 +94,7 @@
     "Tags": [],
     "InternalName": "AutoRetainer",
     "RepoUrl": "https://github.com/PunishXIV/AutoRetainer",
-    "DownloadCount": 1027766,
+    "DownloadCount": 1033303,
     "LastUpdate": 1742268967989,
     "DownloadLinkInstall": "https://github.com/keixiv/bees/releases/latest/download/AutoRetainer.zip",
     "DownloadLinkUpdate": "https://github.com/keixiv/bees/releases/latest/download/AutoRetainer.zip",
@@ -104,7 +128,7 @@
     "IsHide": "False",
     "IsTestingExclusive": "False",
     "LastUpdated": 1731890939,
-    "DownloadCount": 77648,
+    "DownloadCount": 77837,
     "DownloadLinkInstall": "https://github.com/keixiv/bees/releases/latest/download/BDTHPlugin.zip",
     "DownloadLinkUpdate": "https://github.com/keixiv/bees/releases/latest/download/BDTHPlugin.zip"
   },
@@ -186,7 +210,7 @@
     "AssemblyVersion": "7.2.2.21",
     "DownloadLinkUpdate": "https://github.com/keixiv/bees/releases/latest/download/GatherbuddyReborn.zip",
     "Changelog": "## What's Changed\r\n* Revert change that breaks deserialization of Auto-Gather lists by @lazyranma in https://github.com/FFXIV-CombatReborn/GatherBuddyReborn/pull/293\r\n\r\n\r\n**Full Changelog**: https://github.com/FFXIV-CombatReborn/GatherBuddyReborn/compare/7.2.2.20...7.2.2.21",
-    "DownloadCount": 177526
+    "DownloadCount": 177664
   },
   {
     "Author": "Ottermandias",
@@ -236,7 +260,7 @@
     "Punchline": "A collection of quality of life tweaks.",
     "AcceptsFeedback": true,
     "Changelog": "New Tweak: Companion Color Preview\n\nShows a small drop-down menu above the \"Companion\" window to select the color of your own chocobo. This is just to preview the colors and will not be saved!",
-    "DownloadCount": 0,
+    "DownloadCount": 1534,
     "LastUpdate": 1742600103,
     "DownloadLinkInstall": "https://github.com/keixiv/bees/releases/latest/download/HaselTweaks.zip",
     "DownloadLinkUpdate": "https://github.com/keixiv/bees/releases/latest/download/HaselTweaks.zip"
@@ -322,7 +346,7 @@
     "IsHide": false,
     "IsTestingExclusive": false,
     "DownloadLinkUpdate": "https://github.com/keixiv/bees/releases/latest/download/NoClippy.zip",
-    "DownloadCount": 63563,
+    "DownloadCount": 63753,
     "LastUpdate": "1731880974"
   },
   {
@@ -353,7 +377,7 @@
     "Tags": [],
     "InternalName": "Orbwalker",
     "RepoUrl": "https://github.com/PunishXIV/Orbwalker",
-    "DownloadCount": 39637,
+    "DownloadCount": 39666,
     "LastUpdate": 1739684480438,
     "DownloadLinkInstall": "https://github.com/keixiv/bees/releases/latest/download/Orbwalker.zip",
     "DownloadLinkUpdate": "https://github.com/keixiv/bees/releases/latest/download/Orbwalker.zip",
@@ -374,7 +398,7 @@
     ],
     "InternalName": "PandorasBox",
     "RepoUrl": "https://github.com/PunishXIV/PandorasBox",
-    "DownloadCount": 578666,
+    "DownloadCount": 578795,
     "LastUpdate": 1737534314108,
     "DownloadLinkInstall": "https://github.com/keixiv/bees/releases/latest/download/PandorasBox.zip",
     "DownloadLinkUpdate": "https://github.com/keixiv/bees/releases/latest/download/PandorasBox.zip",
@@ -429,7 +453,7 @@
     "IsHide": false,
     "IsTestingExclusive": false,
     "DownloadLinkUpdate": "https://github.com/keixiv/bees/releases/latest/download/ReAction.zip",
-    "DownloadCount": 25114,
+    "DownloadCount": 25185,
     "LastUpdate": "1732337751"
   },
   {
@@ -444,7 +468,7 @@
     ],
     "InternalName": "Saucy",
     "RepoUrl": "https://github.com/PunishXIV/Saucy",
-    "DownloadCount": 271116,
+    "DownloadCount": 271195,
     "LastUpdate": 1733673763789,
     "DownloadLinkInstall": "https://github.com/keixiv/bees/releases/latest/download/Saucy.zip",
     "DownloadLinkUpdate": "https://github.com/keixiv/bees/releases/latest/download/Saucy.zip",
@@ -480,7 +504,7 @@
     "Tags": [],
     "InternalName": "vnavmesh",
     "RepoUrl": null,
-    "DownloadCount": 283824,
+    "DownloadCount": 284795,
     "LastUpdate": 1742252619877,
     "DownloadLinkInstall": "https://github.com/keixiv/bees/releases/latest/download/vnavmesh.zip",
     "DownloadLinkUpdate": "https://github.com/keixiv/bees/releases/latest/download/vnavmesh.zip",
@@ -519,7 +543,7 @@
     "Tags": [],
     "InternalName": "YesAlready",
     "RepoUrl": "https://github.com/PunishXIV/YesAlready",
-    "DownloadCount": 557281,
+    "DownloadCount": 557431,
     "LastUpdate": 1737808145432,
     "DownloadLinkInstall": "https://github.com/keixiv/bees/releases/latest/download/YesAlready.zip",
     "DownloadLinkUpdate": "https://github.com/keixiv/bees/releases/latest/download/YesAlready.zip",
