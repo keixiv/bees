@@ -1,5 +1,11 @@
 [
   {
+    "name": "Honorific",
+    "version": "0.0.0.0",
+    "repo": "https://kamori.goats.dev/Plugin/PluginMaster",
+    "projectRoot": "."
+  },
+  {
     "name": "AntiAfkKick-Dalamud",
     "version": "2.1.0.7",
     "repo": "https://raw.githubusercontent.com/NightmareXIV/MyDalamudPlugins/main/pluginmaster.json",
