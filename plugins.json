@@ -65,6 +65,12 @@
     "noVersionFlags": true
   },
   {
+    "name": "LazyLoot",
+    "version": "0.0.0.0",
+    "repo": "https://puni.sh/api/plugins",
+    "projectRoot": "./LazyLoot"
+  },
+  {
     "name": "Lifestream",
     "version": "2.3.2.8",
     "repo": "https://raw.githubusercontent.com/NightmareXIV/MyDalamudPlugins/main/pluginmaster.json",
